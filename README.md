@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://alien-traveler.github.io/CSE110-Lab2_Starter/
+# Lab 3
+https://alien-traveler.github.io/fa22-cse110-lab3/
