@@ -1,0 +1,90 @@
+/* CSS Comments */
+h1 {
+    color: rgb(128, 0, 0)
+}
+
+/* h2 is inline CSS */
+
+h3 {
+    color: #df49ab
+}
+
+.navLink {
+    color: hsl(149, 100%, 50%)
+}
+
+.navLink:active{
+    color:purple;
+}
+
+.first_part {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    width: 50%;
+    background-color: powderblue;
+}
+
+#attendance {
+    margin: auto;
+}
+
+.a_name {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#ag_box {
+    border-color: black;
+    border-width: 3px;
+    border-radius: 5%;
+    border-style: double;
+}
+
+.ag_info {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+p {
+    color:gray;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p.ex1 {
+    display: block;
+}
+
+p.ex2 {
+    display: inline-block;
+}
+
+img {
+    position: relative;
+}
+
+img:hover {
+    display: block;
+    position: static;
+    margin-left: 25%;
+    height: 600px;
+    width: 800px;
+    max-width: 1000;
+    max-height: 1000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding: 5% 5% 5% 5%;
+}
+
+.fname, .lname, .email, .birthday {
+    margin: 5% 5% 5% 5%;
+    
+}
