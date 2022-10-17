@@ -1,4 +1,26 @@
 /* CSS Comments */
+
+@font-face {
+    font-family: "FuzzyBubbles";
+    src: url("FuzzyBubbles-Regular.ttf");
+}
+
+@media all and (max-width: 500px) {
+    body {
+        color: red;
+    }
+}
+
+@media (orientation: landscape) {
+    h1{
+        color: greenyellow;
+    }
+}
+
+* {
+    margin: auto;
+}
+
 h1 {
     color: rgb(128, 0, 0)
 }
@@ -18,23 +40,39 @@ h3 {
 }
 
 .first_part {
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-bottom: 100px;
-    margin-right: 100px;
+    margin-top: 5em;
+    margin-left: 5ex;
+    margin-bottom: 5vw;
+    margin-right: 5vh;
     width: 50%;
     background-color: powderblue;
 }
 
-#attendance {
+.first_part #attendance {
     margin: auto;
 }
 
+#attendance > #will {
+    color:#df49ab;
+}
+
+#will ~ li {
+    font-size: large;
+}
+
+#will + li {
+    background-color: yellow;
+}
+
 .a_name {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding-top: 3mm;
+    padding-right: 3mm;
+    padding-left: 3mm;
+    padding-bottom: 3mm;
+}
+
+a[href="/about.html"] {
+    color: cyan;
 }
 
 #ag_box {
@@ -45,14 +83,19 @@ h3 {
 }
 
 .ag_info {
-    margin: 10px 10px 10px 10px;
+    margin: 0.26cm 0.26cm 0.26cm 0.26cm;
     padding: 10px 10px 10px 10px;
+}
+
+.first_part #ag_box > li {
+    background-color: lightgreen;
 }
 
 p {
     color:gray;
     text-decoration: underline;
     text-align: center;
+    font-family: "FuzzyBubbles";
 }
 
 p.ex1 {
@@ -86,5 +129,67 @@ form {
 
 .fname, .lname, .email, .birthday {
     margin: 5% 5% 5% 5%;
-    
+
+}
+
+/* Flexbox */
+.flexbox-container {
+    /* margin-top: 50px; */
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header     header"
+        "sidebar    content"
+        "sidebar    content";
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px auto 70px;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.grid-item {
+    border: lightsalmon 3px solid;
+}
+
+.grid-item-1 {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.grid-item-2 {
+    grid-area: sidebar;
+}
+
+.grid-item-3 {
+    grid-area: content;
 }
